@@ -1,0 +1,27 @@
+# Mac Menu Bar Shortcuts 
+- [Mac Menu Bar Shortcuts](https://davidblue.wtf/drafts/68489605-5A2E-4250-8B8C-EC651CAEA449.html) | WTF
+- [WTF](https://davidblue.wtf/menubar)
+- [Tilde](https://tilde.town/~extratone/shortcuts/menubar/)
+
+![Mac Menu Bar Shortcuts](https://i.snap.as/s0YTeGks.png)
+
+- [STOP](https://www.icloud.com/shortcuts/79b3634b4bc542a18f64f9ef87722920)
+- [rss](https://www.icloud.com/shortcuts/27804384b0dd483e9b83d6bfe75f1c5a)
+- [notifications](https://www.icloud.com/shortcuts/ab518f7ad5f143949f5438b189cfb332)
+- [Marked | Drafts Split Screen](https://www.icloud.com/shortcuts/8ed242ebd26842789a365c80dd76dc8f)
+- [Get Images from Page (Mac)](https://www.icloud.com/shortcuts/c8d38e0080564bfd8c2680d6cb91b20a)
+- [Sample Color](https://www.icloud.com/shortcuts/4b70977ffcba45299fe2ed6bce0cc160)
+- [clipboarddrop](https://www.icloud.com/shortcuts/1598e63dbc034f2d8c0ace4135b8ddec)
+- [LinkJar](https://www.icloud.com/shortcuts/4c187a01a10f4bf59176b23f49f7e5bf)
+- [SpeedCheck](https://www.icloud.com/shortcuts/98aba8835ac34f40a7bc78876f6e2309)
+- [MacWish](https://www.icloud.com/shortcuts/6856b511239f42298d34e4532ecd1308)
+- [Action Directory](https://www.icloud.com/shortcuts/60030616f7784d52965c57020ebe18dd)
+- [ttm.sh Shorten (macOS)](https://www.icloud.com/shortcuts/c51a1cfa8c794b15b20added35cdd4a7)
+- [ttm.sh (macOS)](https://www.icloud.com/shortcuts/1d15b2d67a754b73b1e6b8c4c2b5e9a5)
+- [Tot | Drafts Split Screen](https://www.icloud.com/shortcuts/e34b9db21aef4f01adab609d5e8ca584)
+- [Index Folder](https://www.icloud.com/shortcuts/127d0c8a85734722ab5bf387712e50ca)
+- [JSON Speedtest (macOS)](https://www.icloud.com/shortcuts/c8acc5fa0c614c6a9d56fa0e0dd4b34d)
+- [Light Odette](https://www.icloud.com/shortcuts/91e85ec998df4883a08511ba74c689ec)
+- [Dark Odette](https://www.icloud.com/shortcuts/83866087d2234dc7bf81fd9f6885742e)
+- [cc](https://www.icloud.com/shortcuts/944167d133ff4240be7230d7da676d47)
+- [QuikTweet](https://www.icloud.com/shortcuts/0d89703532644f069f703f76ceddb42e)
