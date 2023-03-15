@@ -1,0 +1,223 @@
+{
+	"WFWorkflowMinimumClientVersionString": "900",
+	"WFWorkflowMinimumClientVersion": 900,
+	"WFWorkflowIcon": {
+		"WFWorkflowIconStartColor": 4292093695,
+		"WFWorkflowIconGlyphNumber": 61497
+	},
+	"WFWorkflowClientVersion": "1146.16",
+	"WFWorkflowOutputContentItemClasses": [],
+	"WFWorkflowHasOutputFallback": false,
+	"WFWorkflowActions": [
+		{
+			"WFWorkflowActionIdentifier": "is.workflow.actions.gettext",
+			"WFWorkflowActionParameters": {
+				"WFTextActionText": {
+					"Value": {
+						"string": "gh repo fork --org softwarehistorysociety \uFFFC",
+						"attachmentsByRange": {
+							"{42, 1}": {
+								"Type": "Clipboard"
+							}
+						}
+					},
+					"WFSerializationType": "WFTextTokenString"
+				},
+				"UUID": "EFAA568D-2A34-47F7-B421-1EB79F06A1BB"
+			}
+		},
+		{
+			"WFWorkflowActionIdentifier": "is.workflow.actions.runshellscript",
+			"WFWorkflowActionParameters": {
+				"Input": {
+					"Value": {
+						"OutputUUID": "EFAA568D-2A34-47F7-B421-1EB79F06A1BB",
+						"Type": "ActionOutput",
+						"OutputName": "Text"
+					},
+					"WFSerializationType": "WFTextTokenAttachment"
+				},
+				"Script": {
+					"Value": {
+						"string": "\uFFFC",
+						"attachmentsByRange": {
+							"{0, 1}": {
+								"OutputUUID": "EFAA568D-2A34-47F7-B421-1EB79F06A1BB",
+								"Type": "ActionOutput",
+								"OutputName": "Text"
+							}
+						}
+					},
+					"WFSerializationType": "WFTextTokenString"
+				},
+				"UUID": "EC27A71C-68ED-4431-B9AA-ABC899FC9F5E"
+			}
+		},
+		{
+			"WFWorkflowActionIdentifier": "com.alexhay.Console.LogMessageIntent",
+			"WFWorkflowActionParameters": {
+				"messages": {
+					"Value": {
+						"OutputUUID": "EC27A71C-68ED-4431-B9AA-ABC899FC9F5E",
+						"Type": "ActionOutput",
+						"OutputName": "Shell Script Result"
+					},
+					"WFSerializationType": "WFTextTokenAttachment"
+				},
+				"title": "SHS Fork (Odette)",
+				"UUID": "5C49258B-4677-49A7-8A57-26ADA36086A2",
+				"Show-messages": true,
+				"tag": "Odette"
+			}
+		},
+		{
+			"WFWorkflowActionIdentifier": "is.workflow.actions.file",
+			"WFWorkflowActionParameters": {
+				"WFFile": {
+					"fileLocation": {
+						"relativeSubpath": "/System/Library/Sounds/Morse.aiff",
+						"WFFileLocationType": "Absolute"
+					},
+					"filename": "Morse.aiff",
+					"displayName": "Morse.aiff"
+				},
+				"UUID": "89FFEB3A-8703-4746-ABC9-7210D1461CCC"
+			}
+		},
+		{
+			"WFWorkflowActionIdentifier": "is.workflow.actions.playsound",
+			"WFWorkflowActionParameters": {
+				"WFInput": {
+					"Value": {
+						"OutputUUID": "89FFEB3A-8703-4746-ABC9-7210D1461CCC",
+						"Type": "ActionOutput",
+						"OutputName": "File"
+					},
+					"WFSerializationType": "WFTextTokenAttachment"
+				}
+			}
+		},
+		{
+			"WFWorkflowActionIdentifier": "is.workflow.actions.notification",
+			"WFWorkflowActionParameters": {
+				"WFInput": {
+					"Value": {
+						"OutputUUID": "89FFEB3A-8703-4746-ABC9-7210D1461CCC",
+						"Type": "ActionOutput",
+						"OutputName": "File"
+					},
+					"WFSerializationType": "WFTextTokenAttachment"
+				},
+				"WFNotificationActionBody": {
+					"Value": {
+						"string": "Forked \uFFFC",
+						"attachmentsByRange": {
+							"{7, 1}": {
+								"Type": "Clipboard"
+							}
+						}
+					},
+					"WFSerializationType": "WFTextTokenString"
+				},
+				"UUID": "C508F37B-57A8-43DA-8EDC-520658F8E0C1",
+				"WFNotificationActionSound": false,
+				"WFNotificationActionTitle": "SHS Fork"
+			}
+		},
+		{
+			"WFWorkflowActionIdentifier": "is.workflow.actions.text.split",
+			"WFWorkflowActionParameters": {
+				"Show-text": true,
+				"WFTextCustomSeparator": "/",
+				"UUID": "783F310D-B7F0-45C3-935A-6811A1D7DB41",
+				"WFTextSeparator": "Custom",
+				"text": {
+					"Value": {
+						"string": "\uFFFC",
+						"attachmentsByRange": {
+							"{0, 1}": {
+								"Type": "Clipboard"
+							}
+						}
+					},
+					"WFSerializationType": "WFTextTokenString"
+				}
+			}
+		},
+		{
+			"WFWorkflowActionIdentifier": "is.workflow.actions.getitemfromlist",
+			"WFWorkflowActionParameters": {
+				"WFInput": {
+					"Value": {
+						"OutputUUID": "783F310D-B7F0-45C3-935A-6811A1D7DB41",
+						"Type": "ActionOutput",
+						"OutputName": "Split Text"
+					},
+					"WFSerializationType": "WFTextTokenAttachment"
+				},
+				"WFItemSpecifier": "Last Item",
+				"UUID": "051E2775-2527-489E-BC0B-1F247FA40011"
+			}
+		},
+		{
+			"WFWorkflowActionIdentifier": "is.workflow.actions.url",
+			"WFWorkflowActionParameters": {
+				"Show-WFURLActionURL": true,
+				"WFURLActionURL": {
+					"Value": {
+						"string": "https://github.com/softwarehistorysociety/\uFFFC",
+						"attachmentsByRange": {
+							"{42, 1}": {
+								"OutputUUID": "051E2775-2527-489E-BC0B-1F247FA40011",
+								"Type": "ActionOutput",
+								"OutputName": "Item from List"
+							}
+						}
+					},
+					"WFSerializationType": "WFTextTokenString"
+				},
+				"UUID": "C4F0EBFB-D67E-4BEB-A7CF-AC10E38DA6C0"
+			}
+		},
+		{
+			"WFWorkflowActionIdentifier": "is.workflow.actions.setclipboard",
+			"WFWorkflowActionParameters": {
+				"WFInput": {
+					"Value": {
+						"OutputUUID": "C4F0EBFB-D67E-4BEB-A7CF-AC10E38DA6C0",
+						"Type": "ActionOutput",
+						"OutputName": "URL"
+					},
+					"WFSerializationType": "WFTextTokenAttachment"
+				},
+				"UUID": "840321B3-32B2-417B-80B5-9226A76251CA"
+			}
+		}
+	],
+	"WFWorkflowInputContentItemClasses": [
+		"WFAppStoreAppContentItem",
+		"WFArticleContentItem",
+		"WFContactContentItem",
+		"WFDateContentItem",
+		"WFEmailAddressContentItem",
+		"WFFolderContentItem",
+		"WFGenericFileContentItem",
+		"WFImageContentItem",
+		"WFiTunesProductContentItem",
+		"WFLocationContentItem",
+		"WFDCMapsLinkContentItem",
+		"WFAVAssetContentItem",
+		"WFPDFContentItem",
+		"WFPhoneNumberContentItem",
+		"WFRichTextContentItem",
+		"WFSafariWebPageContentItem",
+		"WFStringContentItem",
+		"WFURLContentItem"
+	],
+	"WFWorkflowImportQuestions": [],
+	"WFWorkflowTypes": [
+		"MenuBar"
+	],
+	"WFQuickActionSurfaces": [],
+	"WFWorkflowHasShortcutInputVariables": false
+}
